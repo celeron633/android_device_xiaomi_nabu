@@ -340,3 +340,6 @@ ro.lmk.stall_limit_critical=40
 ro.lmk.psi_scrit_complete_stall_ms=150
 ro.lmk.direct_reclaim_pressure=45
 ro.lmk.reclaim_scan_threshold=0
+
+# Recovery
+ro.recovery.ui.blank_unblank_on_init=true
