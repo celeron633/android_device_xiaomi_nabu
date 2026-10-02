@@ -178,6 +178,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
+# Vendor library symlinks
+PRODUCT_PACKAGES += \
+    nabu_libEGL_adreno_32_symlink \
+    nabu_libEGL_adreno_64_symlink \
+    nabu_libGLESv2_adreno_32_symlink \
+    nabu_libGLESv2_adreno_64_symlink \
+    nabu_libq3dtools_adreno_32_symlink \
+    nabu_libq3dtools_adreno_64_symlink \
+    nabu_CneApp_libvndfwk_detect_jni_symlink
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml

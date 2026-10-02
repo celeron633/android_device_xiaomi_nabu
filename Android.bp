@@ -21,3 +21,52 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",
     symlink_target: "/mnt/vendor/persist/wlan/wlan_mac.bin",
 }
+
+install_symlink {
+    name: "nabu_libEGL_adreno_32_symlink",
+    vendor: true,
+    installed_location: "lib/libEGL_adreno.so",
+    symlink_target: "egl/libEGL_adreno.so",
+}
+
+install_symlink {
+    name: "nabu_libGLESv2_adreno_32_symlink",
+    vendor: true,
+    installed_location: "lib/libGLESv2_adreno.so",
+    symlink_target: "egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+    name: "nabu_libq3dtools_adreno_32_symlink",
+    vendor: true,
+    installed_location: "lib/libq3dtools_adreno.so",
+    symlink_target: "egl/libq3dtools_adreno.so",
+}
+
+install_symlink {
+    name: "nabu_libEGL_adreno_64_symlink",
+    vendor: true,
+    installed_location: "lib64/libEGL_adreno.so",
+    symlink_target: "egl/libEGL_adreno.so",
+}
+
+install_symlink {
+    name: "nabu_libGLESv2_adreno_64_symlink",
+    vendor: true,
+    installed_location: "lib64/libGLESv2_adreno.so",
+    symlink_target: "egl/libGLESv2_adreno.so",
+}
+
+install_symlink {
+    name: "nabu_libq3dtools_adreno_64_symlink",
+    vendor: true,
+    installed_location: "lib64/libq3dtools_adreno.so",
+    symlink_target: "egl/libq3dtools_adreno.so",
+}
+
+install_symlink {
+    name: "nabu_CneApp_libvndfwk_detect_jni_symlink",
+    vendor: true,
+    installed_location: "app/CneApp/lib/arm64/libvndfwk_detect_jni.qti.so",
+    symlink_target: "/vendor/lib64/libvndfwk_detect_jni.qti.so",
+}
