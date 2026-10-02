@@ -12,3 +12,6 @@ ro.product.marketname                                                           
 
 # pen gen2
 persist.mi_pen.gen                                                                                  u:object_r:mi_pen_gen_prop:s0 exact string
+
+# Device power profile, applied through the Power HAL extension.
+persist.sys.nabu.power_profile    u:object_r:nabu_power_profile_prop:s0 exact enum power_save balanced performance

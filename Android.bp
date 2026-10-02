@@ -5,7 +5,10 @@
 //
 
 soong_namespace {
-    imports: ["hardware/qcom-caf/bootctrl"],
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/qcom-caf/bootctrl",
+    ],
 }
 
 install_symlink {

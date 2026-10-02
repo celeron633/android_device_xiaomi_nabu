@@ -1,0 +1,20 @@
+// Copyright (C) 2026 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+
+cc_binary {
+    name: "nabu-power-profiles",
+    system_ext_specific: true,
+    srcs: ["PowerProfiles.cpp"],
+    init_rc: ["nabu-power-profiles.rc"],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+        "pixel-power-ext-V1-ndk",
+    ],
+    cflags: [
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+    ],
+}

@@ -1,0 +1,7 @@
+type nabu_power_profiles, domain, coredomain;
+type nabu_power_profiles_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(nabu_power_profiles)
+binder_use(nabu_power_profiles)
+hal_client_domain(nabu_power_profiles, hal_power)
+get_prop(nabu_power_profiles, nabu_power_profile_prop)

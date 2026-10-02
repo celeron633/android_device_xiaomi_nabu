@@ -1,0 +1,16 @@
+service nabu-power-profiles /system_ext/bin/nabu-power-profiles
+    class late_start
+    user system
+    group system
+    disabled
+    oneshot
+
+on property:persist.sys.nabu.power_profile=*
+    restart nabu-power-profiles
+
+# Restore the selected profile after boot or a Power HAL restart.
+on property:init.svc.vendor.power-hal-aidl=running
+    restart nabu-power-profiles
+
+on property:vendor.powerhal.init=1
+    restart nabu-power-profiles
